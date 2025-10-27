@@ -1,0 +1,323 @@
+:root{        /*CSS SASS concept */
+	--primary_color: #1d1e24;
+	--secondry_color: #0572ff;
+	--black_two: #23262B;          /*primary_color and etc are user define and called variables. you have to putt -- there*/
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:cursive;
+}
+body{
+	background-color: var(--primary_color); /*u can call variables here by var(-- variable_name)*/
+}
+.intro-section{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.profile-section{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:flex-start;
+	line-height:30px;
+	width:82vw;
+	height:160px;
+	border-radius:20px;
+	position:relative;
+	top:-80px;
+	box-shadow:0px 0px 2px var(--black_two);
+	background-color:var(--black_two);
+}
+.profile-image{
+	width:20%;
+	position: relative;
+	top: -40px;
+	padding:0%;
+	left:15px;
+}
+.profile-image >img{
+	border: 6px solid var(--primary_color);
+	border-radius:50px;
+	height:170px;
+	width: auto;
+	
+}
+.name-column{
+	width:25%;
+	height:120px;
+	margin-top:20px;
+	line-height: 35px;
+	border-right: 1px solid rgba(211, 211, 211, 0.315);
+}
+.name-column >h1
+{
+	text-transform:capitalize;
+	font-size:22px;
+}
+.name-column >p, .name-column >h1
+{
+color: #AEB0B8;	
+	
+}
+.name-column span {
+	margin-right:12px;
+}
+.contact-column{
+	border-right: 1px solid rgba(211, 211, 211, 0.315);
+	width:25%;
+	height:120px;
+	margin-top:20px;
+	line-height: 35px;
+	padding-left:20px;
+}
+.contact-column span{
+	color: #AEB0B8;
+	
+	
+}
+.contact-column p{
+	color:white;
+}
+.bio-column p{
+	
+	color: white;
+}
+.bio-column span{
+	color:#AEB0B8;
+}
+.bio-column{
+	width:16%;
+	height:120px;
+	margin-top:20px;
+	line-height: 35px;
+	padding-left:20px;
+}
+.content-section{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	margin-bottom:50px;
+}
+.content-area{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items:flex-start;
+	width:80vw;
+}
+.menu-icon-column{
+	width:15%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	border-radius:25px;
+	height:585px;
+	background-color:var(--black_two);
+	position:sticky;
+	top:30px;
+}
+.menu-icon-column > div{
+	background-color:#2e2f36;
+	margin-top:35px;
+	width:fit-content;
+	padding:12px 23px;
+	border-radius:20px;
+	text-align:center;
+}
+.menu-icon-column >div >p{
+	color:white;
+}
+.testimonials-area{
+	width:100%;
+	height:150px;
+	border: 1px solid gray;
+	border-radius:20px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+.face-img >img{
+	
+	margin:20px;
+	height:50px;
+	width:50px;
+	border-radius:10px;
+}
+
+
+
+
+
+.menu-content-column{
+	height:1200px;
+	width:80%;
+	border-radius:25px;
+	background-color: var(--black_two);	
+	color:white;
+	padding:15px;
+	
+}
+.menu-content-column p{
+	font-family:'Times New Roman', serif;
+}
+.parent{
+	height:550px;
+	width:950px;
+	background-color: black;
+	border-radius:20px;
+	margin-top:10px;	
+	display:flex;
+	padding:10px;
+}
+.clild{
+	display:flex;
+	position:relative;
+}
+.Web-Design, .Web-Development, .Mobile-Apps, .Photography {
+	background-color: var(--black_two);
+	height:260px;
+	width:450px;
+	border: 1px solid gray;
+	margin-left:10px;
+	margin-top:5px;
+	border-radius:20px;
+	padding:10px;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.Web-Design img, .Mobile-Apps img{
+	border-radius:20px;
+	display:block;
+	align-self:center;
+}
+
+.resume-content-section{
+	height:1200px;
+	width:80%;
+	border-radius:25px;
+	background-color: var(--black_two);	
+	color:white;
+	padding:15px;
+	display:none; /*for a temp*/
+}
+.skill-section{
+	width:100%
+	display:flex;
+	flex-direction:column;
+	gap:22px;
+	border:2px solid #33363D;
+	padding:15px 15px;
+	border-radius:10px;
+}
+.progress-container{
+	width:100%;
+	background-color:#2e2f36;
+	border-radius:20px;
+	height:22px;
+	overflow:hidden; /* */
+	box-shadow: inset 0 3px 3px rgba(10, 200, 100, 0.5);   /*  */
+	margin-bottom:10px;
+}
+.html-progress-bar, .Bootstrap-progress-bar, .CSS, .java-script, .react
+{
+height:100%;
+background-color:#015aff;	
+border-radius:20px;
+display:flex;
+justify-content:space-between;
+padding:0 8px;
+}
+
+.html-progress-bar{
+	width:70%;
+}
+
+.Bootstrap-progress-bar{
+	width:50%;
+}
+
+.CSS{
+	width:85%;
+}
+.java-script{
+	width:30%;
+}
+.react{
+	width:25%;
+}
+
+.work-content-section{
+	width: 80%;
+	height: 1200px;
+	background-color:var(--black_two);
+	color:white;
+	padding:15px;
+	display:none;   /*     */
+}
+.work-content-section >ul{
+	display:flex;
+	margin:10px;
+	gap:30px;
+	
+}
+.work-content-section > ul >li{
+	font-family:emoji;
+}
+.work-detail{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	gap:10px;
+	
+}
+.work-detail >div{
+	width:400px;
+	/* border:1px solid white; */
+	border-radius:20px;
+	text-align:center;
+	padding:10px;
+	
+}
+.work-detail >div >img{
+	border-radius:30px;
+	transition: all 0.2s ease-in-out;
+	
+}
+.work-detail > div >img:hover{
+	box-shadow: 0px 0px 20px white;
+	transform:scale(1.01);
+}
+.contect-content-section{
+	height: 1200px;
+	width:80%;
+	background-color:var(--black_two);
+	padding:20px;
+	color:white;
+	display: none;
+}
+.map >iframe{
+	border-radius:20px;
+	margin-bottom:20px;
+}
+.name, .email{
+	width:49%;
+	height:40px;
+	border-radius:20px;
+	padding-left:10px;
+	
+}
+.message{
+	width:99%;
+	height:100px;
+	border-radius:20px;
+	padding-top:10px;
+	padding-left:10px;
+	resize:none;
+}
